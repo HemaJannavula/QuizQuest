@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuizQuest</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 QuizQuest</h1>
+
+    <div id="start-screen">
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div id="quiz-container" class="hide">
+      <div id="question-box">
+        <p id="question"></p>
+        <div id="answer-buttons"></div>
+      </div>
+      <div class="quiz-info">
+        <span id="timer">Time: 15</span>
+        <span id="score">Score: 0</span>
+      </div>
+    </div>
+
+    <div id="result-screen" class="hide">
+      <h2>Quiz Finished!</h2>
+      <p>Your Score: <span id="final-score"></span></p>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
